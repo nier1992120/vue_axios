@@ -1,0 +1,35 @@
+<template>
+  <div id="app">
+    <!--<img src="./assets/logo.png">-->
+    <router-view/>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
+
+<style>
+body{
+
+}
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  top: 0;
+  left: 0;
+}
+a{
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.8;
+}
+a:active {
+  opacity: 0.5;
+}
+</style>
