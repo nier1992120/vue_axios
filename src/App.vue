@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!--<img src="./assets/logo.png">-->
     <router-view/>
   </div>
 </template>
@@ -12,24 +11,14 @@ export default {
 </script>
 
 <style>
-body{
 
-}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   top: 0;
   left: 0;
 }
-a{
-  text-decoration: none;
-}
-a:hover {
-  opacity: 0.8;
-}
-a:active {
-  opacity: 0.5;
-}
+
 </style>
