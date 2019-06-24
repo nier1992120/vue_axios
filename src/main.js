@@ -5,6 +5,9 @@ import Axios from 'axios'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import common from './common'
+// import echarts from 'echarts'
+
+// Vue.use(echarts)// 使用echarts
 
 Vue.use(ElementUI)// 使用ElementUI
 

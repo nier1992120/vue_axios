@@ -16,6 +16,7 @@ const itemsDate = function () {
   return items
 }
 
+// 创建一组mock数据
 const tableData = function (pageSize, currentPage) {
   let items = {
     total: 40,
@@ -34,6 +35,7 @@ const tableData = function (pageSize, currentPage) {
   return items
 }
 
+// 创建一组mock数据
 const userList = [
   {
     id: 1,
@@ -123,9 +125,25 @@ const getUserList = function (pageSize, currentPage) {
     userList: userList.slice(start, end)
   }
 }
+
+// 创建一组mock数据
+
+const getImages = function () {
+  const imageData = []
+  for (let i = 0; i <= 30; i++) {
+    let image = {
+      image: Random.dataImage()
+    }
+    imageData.push(image)
+  }
+  return imageData
+}
+
 // Mock.mock(url,post/get,返回数据)
 Mock.mock('item/itemList', 'post', itemsDate)
 
 Mock.mock('item/tableList?pageSize=15&currentPage=1', 'get', tableData)
 
 Mock.mock('item/getUserList?pageSize=10&currentPage=1', 'get', getUserList(10, 1))
+
+Mock.mock('item/getImages', 'get', getImages())

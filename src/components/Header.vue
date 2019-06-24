@@ -4,6 +4,8 @@
       <el-tab-pane label="Timeline" name="second"><Timeline></Timeline></el-tab-pane>
       <el-tab-pane label="Table" name="fourth"><Tables></Tables></el-tab-pane>
       <el-tab-pane label="DatePicker" name="fifth"><DatePicker></DatePicker></el-tab-pane>
+      <el-tab-pane label="Echarts" name="sixth"><Echarts></Echarts></el-tab-pane>
+      <el-tab-pane label="Waterflow" name="seventh"><Waterflow></Waterflow></el-tab-pane>
     </el-tabs>
 </template>
 
@@ -12,10 +14,12 @@ import Carousel from './Carousel'
 import Timeline from './Timeline'
 import Tables from './Tables'
 import DatePicker from './DatePicker'
+import Echarts from './Echarts'
+import Waterflow from './Waterflow'
 
 export default {
   name: 'Header',
-  components: {DatePicker, Tables, Timeline, Carousel},
+  components: {Waterflow, Echarts, DatePicker, Tables, Timeline, Carousel},
   data () {
     return {
       activeName: 'first'
